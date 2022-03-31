@@ -12,8 +12,9 @@ def main():
         while letter not in 'YN':
             letter = get_letter('Play a game of hangman? (Y/N)')
         if letter == 'Y':
+            print('\n')
             hangman(choice(words))
-            input('Press Enter to continue...')
+            input('\nPress Enter to continue...')
             continue
         else:
             break
